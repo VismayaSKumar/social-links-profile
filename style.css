@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter';
+}
+.container{
+    height: 100vh;;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* ADDED padding */
+    box-sizing: border-box; /* ADDED box-sizing */
+}
+.box{
+    max-width: 90%; /* CHANGED max-width */
+    width: 400px; /* ADDED width */
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 12%);
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 7%;
+}
+.profile{
+    padding: 15px;
+}
+.location{
+    padding-top:10px;
+    color: hsl(75, 94%, 57%) ;
+}
+.work{
+    padding: 15px;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    justify-content: space-between;    
+    gap: 13px;
+}
+li{
+    height: 40px;
+    background-color: hsl(0, 0%, 20%);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: 2s;
+}
+li:hover{
+    background-color:  hsl(75, 94%, 57%);
+    color:  hsl(0, 0%, 8%);
+    cursor:  pointer ;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+footer{
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+}
+@media (max-width: 600px) {
+    .box {
+        padding: 10px; /* CHANGED padding */
+    }
+    .box img {
+        height: 80px; /* CHANGED height */
+        width: 80px; /* CHANGED width */
+    }
+    .profile {
+        padding: 10px; /* CHANGED padding */
+    }
+    .location {
+        padding-top: 5px; /* CHANGED padding-top */
+    }
+    .work {
+        padding: 10px; /* CHANGED padding */
+    }
+    li {
+        height: 35px; /* CHANGED height */
+        font-size: 14px; /* ADDED font-size */
+    }
+    .attribution {
+        font-size: 10px; /* CHANGED font-size */
+    }
+    footer {
+        left: 0;
+        bottom: 0;
+        width: 100%; /* CHANGED width */
+    }
+}
